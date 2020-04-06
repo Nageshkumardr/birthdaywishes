@@ -1,0 +1,164 @@
+body{
+    background-color: red;
+    background-image: linear-gradient(141deg, rgb(71,159,76) 0%, rgb(65,122,117) 51%, #9fb8ad 75%);
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    min-height: 100vh;
+}
+
+.container-main{
+    margin-bottom: 100px;
+}
+
+.main-bd-wishes{
+    background-color: darkblue;
+    max-width: 1200px;
+    margin: 100px auto 50px auto;
+    width:100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.left-gif{
+    width: 25%;
+    margin-right: 10px;
+    height: 560px;
+}
+.right-gif{
+    width: 25%;
+    margin-left: 10px;
+    height: 560px;
+}
+.middle-gif{
+    width: 50%;
+    height: 100%;
+}
+.middle-gif-img{
+    width: 100%;
+    height: 100%;
+}
+
+
+h2{
+    padding: 20px;
+    margin-top: 100px;
+    background-color: white;
+    font-family: 'Lobster', cursive;
+    color: deeppink;
+    font-size: 80px;
+}
+.main{
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    background-color: white;
+}
+
+.left-messages{
+    width: 50%;
+    height: 100%;
+    min-height: 100vh;
+    background-color: white;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.birthday-wishes{
+    width: 50%;
+    height: 100%;
+    min-height: 100vh;
+    background-color: #005cbf;
+}
+
+.image{
+    width:100%;
+}
+
+.message{
+    background-color: white;
+    padding:20px;
+}
+.message-item{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.images{
+    width:100px;
+    height:100px;
+    padding:10px;
+}
+
+.messages{
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+}
+
+video {
+    margin-left: auto;
+    display: flex;
+    width: 100%;
+
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+    .main{
+        flex-direction: column;
+    }
+
+    .birthday-wishes,.left-messages{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .left-gif{
+        display:none;
+    }
+    .right-gif{
+        width: 100%;
+    }
+    .middle-gif{
+        width: 100%;
+    }
+    .main-bd-wishes{
+        flex-direction: column;
+    }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+    .main{
+        flex-direction: column;
+    }
+
+    .birthday-wishes,.left-messages{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .left-gif{
+        display:none;
+    }
+    .right-gif{
+        width: 100%;
+        height: 500px;
+    }
+    .middle-gif{
+        width: 100%;
+    }
+    .main-bd-wishes{
+        flex-direction: column;
+    }
+}
