@@ -15,7 +15,6 @@ body{
 .main-bd-wishes{
     max-width: 1200px;
     margin: 100px auto 50px auto;
-    width:100%;
     padding: 20px;
     display: flex;
     background-color: white;
@@ -119,6 +118,10 @@ video {
     width: 100%;
 
 }
+.image-top{
+    width:80%;
+    height:400px;
+}
 
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 992px) {
@@ -128,6 +131,7 @@ video {
 
     .birthday-wishes,.left-messages{
         width: 100%;
+        margin-right: 0;
         margin-bottom: 10px;
     }
 
@@ -135,6 +139,7 @@ video {
         display:none;
     }
     .right-gif{
+        margin-left: 0px;
         width: 100%;
     }
     .middle-gif{
@@ -143,6 +148,11 @@ video {
     .main-bd-wishes{
         flex-direction: column;
     }
+
+    .image-top{
+        width:100%;
+    }
+
 }
 
 /* On screens that are 600px or less, set the background color to olive */
@@ -153,12 +163,14 @@ video {
 
     .birthday-wishes,.left-messages{
         width: 100%;
+        margin-right: 0;
         margin-bottom: 10px;
     }
     .left-gif{
         display:none;
     }
     .right-gif{
+        margin-left: 0;
         width: 100%;
         height: 500px;
     }
@@ -167,5 +179,12 @@ video {
     }
     .main-bd-wishes{
         flex-direction: column;
+    }
+    h2{
+        font-size: 50px;
+    }
+
+    .image-top{
+        width:100%;
     }
 }
